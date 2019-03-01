@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - 3.6
+
+install:
+  - pip install codecov
+  - pip install tf-nightly-2.0-preview --quiet
+
+script:
+  - python tests/device_checks_test.py
+  - coverage run tests/device_checks_test.py
+
+after_success:
+  - codecov
