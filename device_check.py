@@ -32,10 +32,12 @@ if __name__ == '__main__':
 
     if args.device == "cpu":
         with tf.device("/cpu:0"):
-            print("CPU: {} secs".format(measure(tf.random.normal(t),steps)))
+            print("CPU: {} secs".format(measure(tf.random.normal(t), steps)))
     elif args.device == "gpu":
         if tf.test.is_gpu_available():
             with tf.device("/gpu:0"):
                 print("GPU: {} secs".format(measure(tf.random.normal(t), steps)))
+        else:
+            print("it's not possible to detect a GPU")
     else:
-        print("define a device")
+        print("please define a device")
