@@ -5,7 +5,7 @@ python:
 
 install:
   - pip install codecov
-  - pip install -r requirements.txt
+  - pip install --progress-bar off -r requirements.txt
 
 script:
   - python tests/device_checks_test.py
