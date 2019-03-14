@@ -1,2 +1,7 @@
 #tf-nightly-gpu-2.0-preview #gpu
-tf-nightly-2.0-preview #tradition-cpu
+#tf-nightly-2.0-preview #tradition-cpu
+
+tensorflow-gpu==2.0.0-alpha0
+matplotlib
+seaborn
+pandas

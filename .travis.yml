@@ -5,7 +5,8 @@ python:
 
 install:
   - pip install codecov
-  - pip install tf-nightly-2.0-preview --quiet
+#  - pip install tf-nightly-2.0-preview --quiet
+  - pip install tensorflow==2.0.0-alpha0 --quiet
 
 script:
   - python tests/device_checks_test.py
