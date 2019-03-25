@@ -158,9 +158,9 @@ if __name__ == '__main__':
     train_dataset = dataset.sample(frac=0.8, random_state=0)
     test_dataset = dataset.drop(train_dataset.index)
 
-    ## plot_analysis_dataset(train_dataset)
+    plot_analysis_dataset(train_dataset)
 
-    ## correlation_heatmap(ds_view)
+    correlation_heatmap(train_dataset)
     train_stats = train_dataset.describe()
     train_stats.pop("fixed acidity")
     train_stats = train_stats.transpose()
