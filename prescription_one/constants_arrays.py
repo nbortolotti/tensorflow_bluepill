@@ -35,6 +35,6 @@ if __name__ == '__main__':
 
     args = pa.parse_args()
 
-    #add_pill(read_csv_array('/../support/arrays.csv'))
+    add_pill(read_csv_array('/../support/arrays.csv'))
     div_pill(read_csv_array('/../support/arrays.csv'))
 
