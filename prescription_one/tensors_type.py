@@ -21,6 +21,7 @@ if __name__ == '__main__':
     #                     dense_shape=[3, 4])
     #
     # print(s)
+    
 
     numbers_a = tf.ragged.constant([[3, 5], [], [7, 9, 1], [5], []])
     numbers_b = tf.ragged.constant([[1, 1], [], [1, 1, 1], [1], []])
