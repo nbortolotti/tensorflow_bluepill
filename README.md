@@ -80,6 +80,9 @@ into this section we will review the experience to
 
 ## General examples
 
-
-
 *   device_check: analyzing performance using a generic operation cpu and gpu device
+
+
+## Official site with details
+
+*   [spanish version](https://tensorflow-pildora-azul.nicolasbortolotti.com/)
