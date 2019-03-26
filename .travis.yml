@@ -9,8 +9,8 @@ install:
   - pip install tensorflow==2.0.0-alpha0 --quiet
 
 script:
-  - python tests/device_checks_test.py
-  - coverage run tests/device_checks_test.py
+  - python tests/general_checks_test.py
+  - coverage run tests/general_checks_test.py
 
 after_success:
   - codecov
