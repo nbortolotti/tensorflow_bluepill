@@ -7,7 +7,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 def add_pill(a, b):
     sum_operation = tf.add(a, b, name='add')
-    return print(sum_operation)
+    return sum_operation
 
 
 if __name__ == '__main__':
@@ -19,4 +19,5 @@ if __name__ == '__main__':
     args = pa.parse_args()
 
     if args.operation == "sum":
-        add_pill(args.a, args.b)
+        result = add_pill(args.a, args.b)
+        print(result)
