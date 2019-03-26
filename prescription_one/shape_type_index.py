@@ -14,9 +14,10 @@ def type_tensor_pill(a):
 
 
 def slice_tensor_pill(a):
-    #return a[1:, :]
-    #return a[..., 0, tf.newaxis]
-    return a[1,..., tf.newaxis]
+    # return a[1:, :]
+    # return a[..., 0, tf.newaxis]
+    return a[1, ..., tf.newaxis]
+
 
 if __name__ == '__main__':
     pa = argparse.ArgumentParser(description='tensorflow constants and functions')
