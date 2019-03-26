@@ -9,21 +9,12 @@ from device_check import measure
 from prescription_one.tensor_scalars import add_pill
 
 
-# class GeneralDeviceCheck(TestCase):
-#     def test_cpu(self):
-#         t = (500, 500)
-#         steps = 50
-#
-#         result = measure(tf.random.normal(t), steps)
-#         self.assertLess(result, 10.)
+class GeneralDeviceCheck(TestCase):
+    def test_cpu(self):
+        result = measure(tf.random.normal((500, 500)), 50)
+        self.assertLess(result, 10.)
 
 
 class general_scalars(TestCase):
     def test_add(self):
-        x = 3
-        y = 5
-
-        result = add_pill(x, y)
-        check = tf.add(8, 0)
-
-        self.assertEqual(tf.print(result), tf.print(check))
+        self.assertEqual(tf.print(add_pill(3, 5)), tf.print(tf.add(8, 0)))
