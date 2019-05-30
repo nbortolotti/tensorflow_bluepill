@@ -1,7 +1,10 @@
-#tf-nightly-gpu-2.0-preview #gpu
-#tf-nightly-2.0-preview #tradition-cpu
+# pip install -r requirements.txt 
 
-tensorflow-gpu==2.0.0-alpha0
+# cases when you need to use gpu-support
+#tensorflow-gpu==2.0.0-alpha0
+
+# cases when you don't need to use gpu-support
+tensorflow==2.0.0-alpha0
 matplotlib
 seaborn
 pandas
