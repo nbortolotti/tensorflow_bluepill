@@ -2,9 +2,10 @@
 
 # cases when you need to use gpu-support
 #tensorflow-gpu==2.0.0-alpha0
+#tensorflow-gpu==2.0.0-beta1
 
 # cases when you don't need to use gpu-support
-tensorflow==2.0.0-alpha0
-matplotlib
-seaborn
-pandas
+tensorflow==2.1.0
+matplotlib==3.1.1
+seaborn==0.9.0
+pandas==1.0.1
