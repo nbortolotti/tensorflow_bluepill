@@ -6,10 +6,11 @@ python:
 install:
   - pip install codecov
 #  - pip install tf-nightly-2.0-preview --quiet
-  - pip install tensorflow==2.0.0-alpha0 --quiet
+  - pip install tensorflow==2.1.0 --quiet
 
 script:
   - python tests/general_checks_test.py
+  - python tests/test_operations.py
   - coverage run tests/general_checks_test.py
 
 after_success:
